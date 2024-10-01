@@ -1,10 +1,3 @@
-# PSubstitute
-
-A C# mocking library without 3rd party dependencies inspired by [NSubstitute](https://nsubstitute.github.io/) syntax.
-
-## Example Tests
-
-```csharp
 using PSubstitute;
 
 namespace UnitTests;
@@ -67,4 +60,3 @@ public class SubstituteTests
         Assert.Throws<Exception>(() => mock.Received(nameof(mock.MySecondMethod), 3));
     }
 }
-```
